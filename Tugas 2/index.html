@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="profile-section">
+    <img src="default.jpg" alt="Profile Picture" class="profile-image" />
+    <div class="profile-info">
+      <h2><span id="name-data"></span></h2>
+      <p><span id="role-data"></span></p>
+      <div class="profile-buttons">
+        <button onclick="EditProfile()">Edit Profile</button>
+        <button>Logout</button>
+      </div>
+    </div>
+    <div class="data">
+        <h3>Availability: <span id="availability-data"></span></h3>
+        <h3>Usia: <span id="usia-data"></span></h3>
+        <h3>Lokasi: <span id="lokasi-data"></span></h3>
+        <h3>Years Experience: <span id="experience-data"></span></h3>
+        <h3>Email: <span id="email-data"></span></h3>
+      </div>
+  </div>
+
+  <div class="profile-form" id="profile-form">
+    <form>
+      <label for="name">Nama:</label>
+      <input type="text" id="name" />
+
+      <label for="role">Role:</label>
+      <input type="text" id="role" />
+
+      <label for="availability">Availability:</label>
+      <input type="text" id="availability" />
+
+      <label for="usia">Usia:</label>
+      <input type="text" id="usia" />
+
+      <label for="lokasi">Lokasi:</label>
+      <input type="text" id="lokasi" />
+
+      <label for="experience">Years Experience:</label>
+      <input type="text" id="experience" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+
+      <button type="button" onclick="SimpanData()">Simpan</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
